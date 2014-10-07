@@ -1,0 +1,7 @@
+/Binaries/
+/Intermediate/
+/Saved/
+/Media/
+/Content/*
+!Content/UnrealGalaxies
+/Content/UnrealGalaxies/Music

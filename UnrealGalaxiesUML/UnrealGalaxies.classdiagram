@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="5c98f49a-5994-4149-82cb-ab23e4abf07b" name="UnrealGalaxies" linkedPackageId="d02cde24-c638-4856-b0b2-ebcbfc36a1e8" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="de9ecbfe-c06c-4d4d-bc07-259386bc6840" name="GameMode" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fef23744-21d8-49e3-8aca-c6f9dfc8f615" />
+        <targetEnds>
+          <association Id="893373aa-ae73-4283-8687-9a7a4bdfb2ea" isDerived="false" sourceEndRoleName="GameMode" targetEndRoleName="ChunkManager" isLeaf="false" isAbstract="false">
+            <classMoniker Id="daef061c-09d5-4cdd-a67d-fb79b6abf54e" LastKnownName="ChunkManager" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="642eda55-9c7b-45ec-840c-976e5cfd33f3" name="GameMode" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6d173bb1-66fc-41b8-9587-14c1a204137f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f2358bd8-275c-49ae-9942-b4e88db66615" name="ChunkManager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="472c7b52-8057-4665-a6ea-a36706cf6746" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="654421d0-ddbe-461d-8dba-6995a275b991" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8762da29-5296-4496-8510-ede6d3135f3a" name="AChunk" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="43ed53ed-64b8-4207-8961-ef0c49cc3932" />
+        <targetEnds>
+          <association Id="463f4953-8aa4-4b6c-a4e3-9ad3b850dd38" isDerived="false" sourceEndRoleName="AChunk" targetEndRoleName="SolarSystem" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5bc91e7e-ea4c-4722-9c68-807db3523a39" LastKnownName="ASolarSystem" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2f59b46b-e0f2-4372-bcea-b7afd8e2e515" name="AChunk" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6469efd5-d92f-4bcc-92cd-443117e78473" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f54e335a-733c-451c-abdb-81f5af9ffdf9" name="SolarSystem" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="dbb22ed4-55d5-4a1c-af8a-34e0f166f3b6" name="Lower" value="n">
+                      <elementDefinition Id="13bc2056-1200-443d-a2f1-db8235c2a1ec" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="6d77aea4-f624-4153-8547-e6410add90ae" name="Upper" value="n">
+                      <elementDefinition Id="a553ba0b-7ddb-49ac-bbc0-3af4ba626adc" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="38828e33-cdb2-4b4c-b491-d0a001673192" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="68144d0f-5886-42f6-9410-f64f3486c63e" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="969b0a7e-32b5-4e64-bd98-190a269d3e93" name="static AssetManager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="97f8c2e8-75be-4b9a-bc3a-f7f8d9e791af" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5bc91e7e-ea4c-4722-9c68-807db3523a39" name="ASolarSystem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4e7b853c-4d2c-48fe-b655-04ba0d0cdcf2" />
+        <targetEnds>
+          <association Id="7a0cfd85-5205-4a93-88bb-588c0c414a95" isDerived="false" sourceEndRoleName="SolarSystem" targetEndRoleName="PlanetManager" isLeaf="false" isAbstract="false">
+            <classMoniker Id="83be0bf8-85c6-48d2-92ad-5339187a5931" LastKnownName="PlanetManager" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="edbb8072-f60f-4442-aba6-afb4328b76b3" name="SolarSystem" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f7403417-32f0-4539-a2df-ff2a04cf1af4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="02a6c5a1-a46e-454c-86c8-b580d83f9ddd" name="PlanetManager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="dd0f1c88-0a4f-42f0-84cc-947377485233" name="Lower" value="1">
+                      <elementDefinition Id="dd69f2c2-67a9-4d43-af85-13959adda1c6" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="af43fce9-eccf-4070-8f72-6f07d4285c7c" name="Upper" value="1">
+                      <elementDefinition Id="dc064ce9-d58b-4ad5-86ce-a03f9a46917d" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="e5acdf7f-fab3-48f9-9db6-ff63381f3634" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8ea72ecd-2b4b-40da-bdd6-ab345b56b93e" />
+          </association>
+          <association Id="f9cd6142-99c3-408c-9f26-cb5ce898bfe5" isDerived="false" sourceEndRoleName="SolarSystem" targetEndRoleName="static AssetManager" isLeaf="false" isAbstract="false">
+            <classMoniker Id="969b0a7e-32b5-4e64-bd98-190a269d3e93" LastKnownName="static AssetManager" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="02c87221-c2f9-4ec2-9adc-8bbe5e61b0bd" name="SolarSystem" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="49a3d7ed-b0e1-4673-9cdc-8bdbbf28d4c3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6e2abcf8-e88c-46f8-a44b-54614c516af5" name="static AssetManager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3fbbbb07-4973-4f80-aaf8-c2cd2aa2056c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="410ce0fe-f4ce-473a-8cdc-6f70e22260d2" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="83be0bf8-85c6-48d2-92ad-5339187a5931" name="PlanetManager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="112a639e-7096-47c2-a617-9c97ae50968e" />
+        <targetEnds>
+          <association Id="0f49a60f-1e80-4a27-829c-d50bb57b8e7d" isDerived="false" sourceEndRoleName="PlanetManager" targetEndRoleName="Planet" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0013e3bd-0081-4394-90fa-6ad0e3df5eab" LastKnownName="APlanet" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7367460a-74f5-4c1d-a47a-b808f8e849f0" name="PlanetManager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d3863142-85ab-47ed-8ec0-9c6077c727d0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="53b1cce1-1a3a-43f3-ae65-02f5273c7a03" name="Planet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="ca6042b0-4e3c-4f93-9960-d314b8688227" name="Lower" value="n">
+                      <elementDefinition Id="e059245a-d9b2-4040-b7e2-89700bd2dc7d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1a3d1b49-47eb-4cbf-8651-c619a42c4394" name="Upper" value="n">
+                      <elementDefinition Id="f54fb2c3-56f6-46ac-a1f0-e2aeca70af59" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c7c9471f-5a83-4274-9fcc-4f9e12366232" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b754ad29-d8ea-4d9b-8dcf-a8d7689efbf0" />
+          </association>
+          <association Id="a2783d74-5be7-4ae0-acea-d0f99bcf6ef8" isDerived="false" sourceEndRoleName="PlanetManager" targetEndRoleName="static Planetfactory" isLeaf="false" isAbstract="false">
+            <classMoniker Id="fea5163c-47cc-4333-9548-ea1060ee6283" LastKnownName="static Planetfactory" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a4b27e9e-a659-4478-837c-653045abce0c" name="PlanetManager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6fcfb2cb-210e-4531-a977-f6be1d46a15b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa118421-e423-4772-87e7-53658874e6f1" name="static Planetfactory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3793ae3b-1344-4fd5-8a77-fdd2a2b74cf8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="33e265c7-01c0-44bb-9143-6f1a6e97b087" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0013e3bd-0081-4394-90fa-6ad0e3df5eab" name="APlanet" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ba499acb-c8b0-416c-9d38-b25cc07684a0" />
+        <targetEnds>
+          <association Id="5b1e0cd6-9862-4b0c-a49a-bd3872a7f990" isDerived="false" sourceEndRoleName="APlanet" targetEndRoleName="PlanetProperties" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a8b72149-efaf-4cda-b3ad-17ce3431abd3" LastKnownName="PlanetProperties" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4647aba3-34c7-47cc-bed7-468d1e3554d1" name="APlanet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="01885152-c122-4915-9d12-ff241adebe5f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b0838b84-8c96-4aee-9ca0-255d2fc1c16c" name="PlanetProperties" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4940570a-125f-4a25-a181-f48bd6e1edcb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fd01e798-422b-4309-a3da-6976c3f481e4" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fea5163c-47cc-4333-9548-ea1060ee6283" name="static Planetfactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5d9f1581-5cbc-45f3-aeaf-0133497a0a98" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="daef061c-09d5-4cdd-a67d-fb79b6abf54e" name="ChunkManager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8da879c6-35a4-449d-a1de-f36a902abc87" />
+        <targetEnds>
+          <association Id="5e7a5acc-8616-4d00-92aa-b843348a750a" isDerived="false" sourceEndRoleName="ChunkManager" targetEndRoleName="AChunk" isLeaf="false" isAbstract="false">
+            <classMoniker Id="8762da29-5296-4496-8510-ede6d3135f3a" LastKnownName="AChunk" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa8afd9c-0297-4e81-b5f6-0b128fe9cb07" name="ChunkManager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d9c6dfab-52f3-4524-8e9e-0b0e25ecbf02" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="91310dac-afc0-4bd8-ad57-bc528b26d846" name="AChunk" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="9de56570-2710-4587-aba0-66049eb1f47e" name="Lower" value="n">
+                      <elementDefinition Id="99a4a265-156f-401f-872d-96bded114b02" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="cfc1679d-06cc-427c-aa43-3484037c49b4" name="Upper" value="n">
+                      <elementDefinition Id="e81e366a-40ff-4f1a-b546-b48d347835f3" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="7dc178ce-814d-490a-bfbb-353253c41fa0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0a50b174-ffcf-400d-9624-2244e9b073eb" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a8b72149-efaf-4cda-b3ad-17ce3431abd3" name="PlanetProperties" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="41a9b725-7f7c-4a64-b073-840fbbf46e04" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="d02cde24-c638-4856-b0b2-ebcbfc36a1e8" name="UnrealGalaxiesUML">
+    <elementDefinition Id="2eedfae5-11d1-435f-829b-48acf8adc23e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="25cbd4b3-2917-495c-b572-f3e40b28b6a3">
+        <profileInstance Id="279a3bf5-b5f6-48cd-95c0-923ad85ee652" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0d3c76b6-d492-4de1-89b9-9941f975c3ca">
+        <profileInstance Id="9ecf0516-5eb0-4300-b2a2-f077b548dd67" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
